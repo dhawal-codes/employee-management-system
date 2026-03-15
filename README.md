@@ -74,4 +74,4 @@ This project has been instrumental in grasping:
 - Structuring projects effectively
 
 ## Author
-Dhawal
+Dhawal Upadhyay 
