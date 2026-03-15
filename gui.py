@@ -1,10 +1,14 @@
 import tkinter as tk
+<<<<<<< HEAD
 from tkinter import ttk
+=======
+>>>>>>> a0bfb7613958fc8dedf9592137f7b86f3e10db6b
 import main
 
 main.load_employees()
 
 window=tk.Tk()
+<<<<<<< HEAD
 icon = tk.PhotoImage(file="icon.png")
 window.iconphoto(False, icon)
 window.title("Employee Management System")
@@ -19,6 +23,10 @@ y=(screen_height/2)-(450/2)
 
 window.geometry(f"500x450+{int(x)}+{int(y)}")
 window.resizable(False,False)
+=======
+window.title("Employee Management System")
+window.geometry("420x500")
+>>>>>>> a0bfb7613958fc8dedf9592137f7b86f3e10db6b
 
 def add_employee():
     win=tk.Toplevel(window)
@@ -51,6 +59,14 @@ def add_employee():
     tk.Button(win,text="Submit",command=submit).pack(pady=5)
     tk.Button(win,text="Back",command=win.destroy).pack(pady=5)
 
+<<<<<<< HEAD
+=======
+import tkinter as tk
+from tkinter import ttk
+import main
+
+from tkinter import ttk
+>>>>>>> a0bfb7613958fc8dedf9592137f7b86f3e10db6b
 
 def sort_column(tree,col,reverse):
     data=[(tree.set(k,col),k) for k in tree.get_children("")]
@@ -62,7 +78,10 @@ def sort_column(tree,col,reverse):
         tree.move(k,"",index)
     tree.heading(col,command=lambda:sort_column(tree,col,not reverse))
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a0bfb7613958fc8dedf9592137f7b86f3e10db6b
 def view_employees():
     win=tk.Toplevel(window)
     win.title("Employees")
@@ -117,7 +136,10 @@ def search_employee():
     tk.Button(win,text="Search",command=search).pack(pady=5)
     tk.Button(win,text="Back",command=win.destroy).pack(pady=5)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a0bfb7613958fc8dedf9592137f7b86f3e10db6b
 def delete_employee():
     win=tk.Toplevel(window)
     win.title("Delete Employee")
@@ -154,8 +176,11 @@ def delete_employee():
 
     tk.Button(win,text="Delete",command=delete).pack(pady=5)
     tk.Button(win,text="Back",command=win.destroy).pack(pady=5)
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a0bfb7613958fc8dedf9592137f7b86f3e10db6b
 def update_employee():
     win=tk.Toplevel(window)
     win.title("Update Employee")
@@ -190,7 +215,10 @@ def update_employee():
     tk.Button(win,text="Update",command=update).pack(pady=5)
     tk.Button(win,text="Back",command=win.destroy).pack(pady=5)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a0bfb7613958fc8dedf9592137f7b86f3e10db6b
 def statistics():
     win=tk.Toplevel(window)
     win.title("Statistics")
@@ -211,6 +239,7 @@ def statistics():
 
     tk.Button(win,text="Back",command=win.destroy).pack()
 
+<<<<<<< HEAD
 
 title=tk.Label(window,text="Employee Management System",font=("Segoe UI",20,"bold"),bg="#f4f6f7",fg="#2c3e50")
 title.pack(pady=30)
@@ -258,5 +287,16 @@ b6.bind("<Leave>",on_leave)
 exit_btn=tk.Button(window,text="Exit",width=25,font=("Segoe UI",11),bg="#e74c3c",fg="white",activebackground="#c0392b",bd=0,cursor="hand2")
 exit_btn.config(command=window.destroy)
 exit_btn.pack(pady=20)
+=======
+tk.Label(window,text="Employee Management System",font=("Arial",18)).pack(pady=20)
+
+tk.Button(window,text="Add Employee",width=22,command=add_employee).pack(pady=5)
+tk.Button(window,text="View Employees",width=22,command=view_employees).pack(pady=5)
+tk.Button(window,text="Search Employee",width=22,command=search_employee).pack(pady=5)
+tk.Button(window,text="Delete Employee",width=22,command=delete_employee).pack(pady=5)
+tk.Button(window,text="Update Employee",width=22,command=update_employee).pack(pady=5)
+tk.Button(window,text="Show Statistics",width=22,command=statistics).pack(pady=5)
+tk.Button(window,text="Exit",width=22,command=window.destroy).pack(pady=5)
+>>>>>>> a0bfb7613958fc8dedf9592137f7b86f3e10db6b
 
 window.mainloop()

@@ -74,4 +74,8 @@ This project has been instrumental in grasping:
 - Structuring projects effectively
 
 ## Author
+<<<<<<< HEAD
 Dhawal
+=======
+Dhawal Upadhyay 
+>>>>>>> a0bfb7613958fc8dedf9592137f7b86f3e10db6b
